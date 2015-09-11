@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff"
+    android:layout_weight="3">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="bottom"
+        android:gravity="right">
+        <EditText
+            android:id="@+id/edUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:ems="10"
+            android:textColor="#f91d5dff"
+            android:inputType="textEmailAddress">
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="#f91d5dff" >
+
+            </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.00"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="#cebab9be"
+            android:textColor="#ff101010"
+            android:layout_weight="1"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:width="@android:dimen/app_icon_size" />
+
+        <Button
+            android:id="@+id/buttonReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Register ?"
+            android:layout_weight="1"
+            android:background="#cebab9be"
+            android:textColor="#ff101010"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:layout_marginRight="10dp" >
+
+            </Button>
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tvFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#ff5e59c8"
+            android:text="Forgot Password?"
+            android:textStyle="bold"
+            android:linksClickable="true"
+            android:clickable="true"
+            android:layout_marginLeft="30dp">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+

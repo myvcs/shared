@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:fillViewport="false"
+    android:fadeScrollbars="false"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satsang Details Registration"
+            android:id="@+id/textView"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/abc_text_size_title_material" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="Satsang ID"
+                android:id="@+id/tvSid" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edSatId"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"
+                android:editable="false"
+                android:enabled="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Satsang Name"
+                android:id="@+id/tv2"
+
+                android:textStyle="bold"
+                android:hint="satsang name" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satName"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"
+                android:hint="satsang  name"
+                android:textColor="#95b0420e"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="Satsang Contact"
+                android:id="@+id/tv3" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satContactPerson"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="Email"
+                android:id="@+id/tv4" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satEmail"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"
+                android:inputType="textWebEmailAddress" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="Mobile No"
+                android:id="@+id/tv5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satContactNo"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"
+                android:inputType="phone"
+                android:hint="enter 10 digits without area code"
+                android:textSize="@dimen/abc_text_size_small_material" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="City"
+                android:id="@+id/tv7" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satCity"
+
+                android:textStyle="bold"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="State"
+                android:id="@+id/tv8" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satState"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"
+                android:clickable="false" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00">
+
+            <TextView
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:textStyle="bold"
+                android:text="Country"
+                android:id="@+id/tv9" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satCountry"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satsang Location Zip / PIN Code"
+                android:id="@+id/tvSatsangCty"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:layout_weight="0.29"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/satZip"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.97"
+                android:hint="Zip/Pincode"
+                android:inputType="number"
+                android:linksClickable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/sangregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Satsang"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|fill_vertical"
+                android:layout_marginTop="20dp"
+
+                android:ellipsize="none" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
